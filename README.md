@@ -15,8 +15,10 @@ Do not use `conda` to run this script. A lot of the tutorials online suggested t
 
 ## The script
 
-I just admitted I wasn't skilled at Linux. Therefore clearly this script was borrowed:
+I just admitted I wasn't skilled at Linux. Therefore clearly this script was borrowed and modified:
 * Someone named *zdary* posted the helpful script [here](https://forums.developer.nvidia.com/t/jetson-nano-opencv-4-1-0/77367/2)
+
+I think the swap memory feature helped with the install (compile) speed, so make sure to include that.
 
 The script was run in the home (`~`) directory
 
@@ -33,6 +35,10 @@ export DISPLAY=:0.0
 ```
 
 I actually don't think the first one was needed - I think it was a line from an older attempt. 
+
+## The lens focusing
+
+Once the camera was working, the picture was out of focus. It turnes out that the IMX219-200 camera that I have has a manual focus adjustment knob that is *really hard to turn* - but it does focus the picture.
 
 ## Summary
 
