@@ -3,6 +3,7 @@ Following [this tutorial](https://dev.to/azure/building-jetson-containers-for-nv
 ## Notable Issues
 
 * Given this was my first time working with `Makefile`, I didn't understand that I needed to create the `.env` file myself first. The repo mentioned in the article above came with a `.evntemp` file - I just had to remove the `temp` and suddenly the `Ctrl+Shift+B` commend in VSCode worked to start the build
+  * I also went with the method of adding `NV_USER=my@email` in the `.env` file
 
 * Ran into a permissions issue mentioning `token_seed`. The resolution was to delete that file via the following command: `rm /home/craig/.docker/.token_seed`
   * If that had not worked, some suggsted to remove `.token_seed.lock` file as well
