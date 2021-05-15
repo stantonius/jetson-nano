@@ -1,3 +1,7 @@
+## Update
+
+While below was my initial approach, I am now led to believe that the right approach is to develop on the x86 container, and then transfer my model to the Jetson when it is ready for fine-tuning. So I will write a new tutorial for that.
+
 Following [this tutorial](https://dev.to/azure/building-jetson-containers-for-nvidia-devices-on-windows-10-with-vs-code-and-wsl-v2-1ao) on how to set up a Jetson development nevironment for Windows. 
 
 ## Notable Issues
