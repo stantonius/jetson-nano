@@ -20,3 +20,12 @@ Downloading and running a container
 * `sudo docker run --gpus all --ipc=host -it --rm -v ~/Projects/tracker:/workspace nvcr.io/nvidia/pytorch:21.04-py3`
   * Because of the `nvidia-container-toolkit`, I only need to use the `--gpus all` to grant access to GPU locally
   * `/workspace` is the main directory loaded by this container
+### Docker Compose
+
+In order to run a container defined in a `docker-compose.yaml` file, and if we have a service specified, use the following command to run it in `-it` interactive mode:
+
+`docker-compose run --rm myapp` - where myapp is the service specified in the docker compose file
+
+However if a container is already running, use the following command:
+
+`docker exec -ti <container name> /bin/bash`
