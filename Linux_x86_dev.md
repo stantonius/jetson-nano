@@ -17,6 +17,6 @@ Note that because of the driver I updated above and **new installation of Docker
 * `sudo apt-get install -y docker nvidia-container-toolkit`
 
 Downloading and running a container
-* `sudo docker run --gpus all -it --rm -v ~/Projects/tracker:/workspace nvcr.io/nvidia/pytorch:21.04-py3`
+* `sudo docker run --gpus all --ipc=host -it --rm -v ~/Projects/tracker:/workspace nvcr.io/nvidia/pytorch:21.04-py3`
   * Because of the `nvidia-container-toolkit`, I only need to use the `--gpus all` to grant access to GPU locally
   * `/workspace` is the main directory loaded by this container
